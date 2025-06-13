@@ -467,6 +467,7 @@ type Project = {
   tech: string[]
   image?: string
   gradient?: string
+  link?: string
 }
 
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
@@ -857,7 +858,7 @@ export default function FuturisticPortfolioV2Page() {
       description:
         "I built a CRM for legal document management using Node.js, Drizzle ORM, React, and Next.js with role-based access. It automated lead handling and employee workflows, improving team efficiency.",
       tech: ["React", "Node.js", "PostgreSQL", "Express", "JWT", "Tailwind CSS"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
       gradient: "from-cyan-600/70 to-purple-700/70",
     },
     {
@@ -865,7 +866,7 @@ export default function FuturisticPortfolioV2Page() {
       description:
         "A healthcare platform connecting patients with medical professionals for second opinions, featuring secure communication, appointment scheduling, and HIPAA-compliant data handling.",
       tech: ["Next.js", "PostgreSQL", "Tailwind CSS", "Node.js", "JWT"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=2070&auto=format&fit=crop",
       gradient: "from-green-600/70 to-cyan-700/70",
     },
   ]
@@ -1083,15 +1084,12 @@ export default function FuturisticPortfolioV2Page() {
           <div className="space-y-4">
             <motion.h1
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-50 leading-tight relative"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-50 whitespace-nowrap leading-tight relative"
             >
               <span className="relative inline-block">
-  <DigitalTextReveal
-    text="Hi, I'm "
-    className="inline-block"
-  />
-  <span className="text-cyan-300 font-bold">Vishal</span>
-</span>
+                <DigitalTextReveal text="Hi, I'm " className="inline-block" />
+                <span className="text-cyan-300 font-bold">Vishal</span>
+              </span>
             </motion.h1>
             <motion.div
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
@@ -1103,7 +1101,7 @@ export default function FuturisticPortfolioV2Page() {
               >
                 <Cpu className="w-7 h-7 text-cyan-400" />
               </motion.div>
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-400 tracking-wide">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-400 tracking-wide whitespace-nowrap">
                 <DigitalTextReveal text="Full Stack Developer" stagger={0.02} />
               </h2>
             </motion.div>
@@ -1663,7 +1661,7 @@ export default function FuturisticPortfolioV2Page() {
               viewport={{ once: true }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-50 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-50 mb-4 whitespace-nowrap">
                 <DigitalTextReveal text="Featured Projects" />
               </h2>
               <motion.div
@@ -1696,7 +1694,7 @@ export default function FuturisticPortfolioV2Page() {
               viewport={{ once: true }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-50 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-50 mb-4 whitespace-nowrap">
                 <DigitalTextReveal text="Professional Experience" />
               </h2>
               <motion.div
@@ -1706,7 +1704,7 @@ export default function FuturisticPortfolioV2Page() {
                 viewport={{ once: true }}
                 className="h-1.5 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto rounded-full shadow-[0_0_10px_rgba(0,255,255,0.3)]"
               />
-              <p className="mt-8 text-gray-300 max-w-2xl mx-auto text-lg">
+              <p className="mt-8 text-gray-300 max-w-2xl mx-auto text-base sm:text-lg">
                 Detailing my professional trajectory and contributions to impactful projects across diverse industries.
               </p>
             </motion.div>
@@ -1734,7 +1732,7 @@ export default function FuturisticPortfolioV2Page() {
               viewport={{ once: true }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-50 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-50 mb-4 whitespace-nowrap">
                 <DigitalTextReveal text="Certifications & Accolades" />
               </h2>
               <motion.div
@@ -1744,7 +1742,7 @@ export default function FuturisticPortfolioV2Page() {
                 viewport={{ once: true }}
                 className="h-1.5 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto rounded-full shadow-[0_0_10px_rgba(0,255,255,0.3)]"
               />
-              <p className="mt-8 text-gray-300 max-w-2xl mx-auto text-lg">
+              <p className="mt-8 text-gray-300 max-w-2xl mx-auto text-base sm:text-lg">
                 Validating my expertise and commitment to continuous learning in the ever-evolving landscape of web
                 development.
               </p>
@@ -1846,7 +1844,7 @@ export default function FuturisticPortfolioV2Page() {
               viewport={{ once: true }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-50 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-50 mb-4 whitespace-nowrap">
                 <DigitalTextReveal text="Initiate Connection" />
               </h2>
               <motion.div
@@ -2043,63 +2041,39 @@ export default function FuturisticPortfolioV2Page() {
         </section>
 
         {/* Footer */}
-        <footer className="relative py-16 px-6 sm:px-8 lg:px-12 bg-black text-white overflow-hidden">
+        <footer className="relative z-20 py-10 px-4 sm:px-8 lg:px-12 bg-black text-white">
           {/* Animated Background Elements */}
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-black/95" />
-            {/* Cyberpunk Grid Pattern */}
-            <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="footerGridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.3" />
-                  <circle cx="20" cy="20" r="1" fill="currentColor" opacity="0.5" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#footerGridPattern)" />
-            </svg>
-
-            {/* Animated Gradient Orbs */}
-            <motion.div
-              className="absolute top-12 left-12 w-40 h-40 rounded-full bg-gradient-to-br from-cyan-600/10 to-purple-600/10 blur-4xl"
-              animate={{
-                scale: [1, 1.3, 1],
-                opacity: [0.15, 0.35, 0.15],
-                x: [-15, 15, -15],
-                y: [-15, 15, -15],
-              }}
-              transition={{
-                duration: 10,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "easeInOut",
-              }}
-            />
-            <motion.div
-              className="absolute bottom-12 right-12 w-48 h-48 rounded-full bg-gradient-to-br from-purple-600/10 to-cyan-600/10 blur-4xl"
-              animate={{
-                scale: [1.3, 1, 1.3],
-                opacity: [0.2, 0.45, 0.2],
-                x: [15, -15, 15],
-                y: [15, -15, 15],
-              }}
-              transition={{
-                duration: 12,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "easeInOut",
-                delay: 3,
-              }}
-            />
-          </div>
-
-          {/* Footer Content */}
+          <div className="absolute inset-0 bg-black/95 pointer-events-none" />
+          {/* Cyberpunk Grid Pattern */}
+          <svg className="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="footerGridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.3" />
+                <circle cx="20" cy="20" r="1" fill="currentColor" opacity="0.5" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#footerGridPattern)" />
+          </svg>
+          {/* Animated Gradient Orbs */}
+          <motion.div
+            className="absolute top-12 left-12 w-32 h-32 rounded-full bg-gradient-to-br from-cyan-600/10 to-purple-600/10 blur-3xl pointer-events-none"
+            animate={{ scale: [1, 1.3, 1], opacity: [0.15, 0.35, 0.15], x: [-10, 10, -10], y: [-10, 10, -10] }}
+            transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute bottom-12 right-12 w-36 h-36 rounded-full bg-gradient-to-br from-purple-600/10 to-cyan-600/10 blur-3xl pointer-events-none"
+            animate={{ scale: [1.3, 1, 1.3], opacity: [0.2, 0.45, 0.2], x: [10, -10, 10], y: [10, -10, 10] }}
+            transition={{ duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 3 }}
+          />
           <div className="relative z-10 max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="text-center mb-12"
+              className="text-center mb-8"
             >
-              <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4 whitespace-nowrap">
                 <DigitalTextReveal text="SYSTEM // CONNECT" />
               </h2>
               <motion.div
@@ -2110,130 +2084,90 @@ export default function FuturisticPortfolioV2Page() {
                 className="h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto rounded-full shadow-[0_0_20px_rgba(0,255,255,0.5)]"
               />
             </motion.div>
-
-            {/* Social Links */}
+            {/* Social Links and Copyright */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="flex items-center justify-center gap-8 mb-10"
+              className="flex flex-col items-center justify-center gap-6 mb-6"
             >
-              {[
-                {
-                  icon: Github,
-                  href: "https://github.com/Vishalecs",
-                  label: "GitHub",
-                  color: "from-gray-600 to-gray-800",
-                  glow: "shadow-[0_0_20px_rgba(156,163,175,0.4)]",
-                  hoverGlow: "shadow-[0_0_30px_rgba(156,163,175,0.6)]",
-                },
-                {
-                  icon: Linkedin,
-                  href: "https://www.linkedin.com/in/vishalecs",
-                  label: "LinkedIn",
-                  color: "from-blue-600 to-blue-800",
-                  glow: "shadow-[0_0_20px_rgba(37,99,235,0.4)]",
-                  hoverGlow: "shadow-[0_0_30px_rgba(37,99,235,0.6)]",
-                },
-                {
-                  icon: Mail,
-                  href: emailUrl,
-                  label: "Email",
-                  color: "from-red-600 to-red-800",
-                  glow: "shadow-[0_0_20px_rgba(220,38,38,0.4)]",
-                  hoverGlow: "shadow-[0_0_30px_rgba(220,38,38,0.6)]",
-                },
-              ].map((social, index) => (
-                <motion.a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`relative group p-4 rounded-xl bg-gradient-to-br ${social.color} ${social.glow} hover:${social.hoverGlow} transition-all duration-300 border border-white/10`}
-                >
-                  <social.icon className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" />
-                  <motion.div
-                    className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    animate={{
-                      scale: [1, 1.2, 1],
-                      opacity: [0, 0.5, 0],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Number.POSITIVE_INFINITY,
-                      ease: "easeInOut",
-                    }}
-                  />
-                  <motion.div
-                    className="absolute inset-0 rounded-xl border border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{
-                      background: "linear-gradient(45deg, transparent 50%, rgba(255,255,255,0.1) 50%)",
-                      backgroundSize: "200% 200%",
-                      animation: "gradientMove 3s linear infinite",
-                    }}
-                  />
-                </motion.a>
-              ))}
-            </motion.div>
-
-            {/* Copyright and Credits */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.9, duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="flex flex-col items-center justify-center gap-4 text-sm text-gray-400"
-            >
-              <motion.div className="flex items-center gap-3" whileHover={{ scale: 1.05 }}>
-                <div className="flex items-center gap-2">
-                  <motion.div
-                    animate={{ scale: [1, 1.3, 1] }}
-                    transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
+              {/* Social Links */}
+              <div className="flex items-center justify-center gap-6">
+                {[
+                  {
+                    icon: Github,
+                    href: "https://github.com/Vishalecs",
+                    label: "GitHub",
+                    color: "from-gray-600 to-gray-800",
+                    glow: "shadow-[0_0_20px_rgba(156,163,175,0.4)]",
+                    hoverGlow: "shadow-[0_0_30px_rgba(156,163,175,0.6)]",
+                  },
+                  {
+                    icon: Linkedin,
+                    href: "https://www.linkedin.com/in/vishalecs",
+                    label: "LinkedIn",
+                    color: "from-blue-600 to-blue-800",
+                    glow: "shadow-[0_0_20px_rgba(37,99,235,0.4)]",
+                    hoverGlow: "shadow-[0_0_30px_rgba(37,99,235,0.6)]",
+                  },
+                  {
+                    icon: Mail,
+                    href: emailUrl,
+                    label: "Email",
+                    color: "from-red-600 to-red-800",
+                    glow: "shadow-[0_0_20px_rgba(220,38,38,0.4)]",
+                    hoverGlow: "shadow-[0_0_30px_rgba(220,38,38,0.6)]",
+                  },
+                ].map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -5 }}
+                    whileTap={{ scale: 0.95 }}
+                    className={`relative group p-4 rounded-xl bg-gradient-to-br ${social.color} ${social.glow} hover:${social.hoverGlow} transition-all duration-300 border border-white/10`}
                   >
-                    <Heart className="w-5 h-5 text-red-400" />
-                  </motion.div>
-                  <span className="text-sm font-medium tracking-wider">Crafted with passion and</span>
-                  <motion.div
-                    animate={{ rotate: [0, 20, -20, 0] }}
-                    transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
-                  >
-                    <Coffee className="w-5 h-5 text-yellow-400" />
-                  </motion.div>
-                  <span className="text-sm font-medium tracking-wider">endless coffee</span>
-                </div>
-              </motion.div>
-
-              <motion.div className="flex items-center gap-3" whileHover={{ scale: 1.05 }}>
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-600 to-purple-600 flex items-center justify-center shadow-md shadow-cyan-500/30">
-                  <span className="text-xs font-bold">©</span>
-                </div>
-                <p className="text-sm font-semibold tracking-wider">2025 Vishal Singh. All rights reserved.</p>
-              </motion.div>
-            </motion.div>
-
-            {/* Decorative Elements */}
-            <motion.div
-              className="absolute top-16 right-16 opacity-20"
-              animate={{ y: [-10, 10, -10], rotate: [0, 10, -10, 0], scale: [1, 1.1, 1] }}
-              transition={{ duration: 7, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-            >
-              <Code className="w-8 h-8 text-cyan-300" />
-            </motion.div>
-            <motion.div
-              className="absolute bottom-16 left-16 opacity-20"
-              animate={{ y: [10, -10, 10], rotate: [0, -10, 10, 0], scale: [1, 1.1, 1] }}
-              transition={{ duration: 9, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-            >
-              <Terminal className="w-6 h-6 text-purple-300" />
+                    <social.icon className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" />
+                    <motion.div
+                      className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      animate={{
+                        scale: [1, 1.2, 1],
+                        opacity: [0, 0.5, 0],
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Number.POSITIVE_INFINITY,
+                        ease: "easeInOut",
+                      }}
+                    />
+                    <motion.div
+                      className="absolute inset-0 rounded-xl border border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      style={{
+                        background: "linear-gradient(45deg, transparent 50%, rgba(255,255,255,0.1) 50%)",
+                        backgroundSize: "200% 200%",
+                        animation: "gradientMove 3s linear infinite",
+                      }}
+                    />
+                  </motion.a>
+                ))}
+              </div>
+              {/* Copyright */}
+              <div className="flex flex-col items-center gap-2 text-xs sm:text-sm text-gray-400">
+                <span className="flex items-center gap-2">
+                  <Heart className="w-4 h-4 text-red-400" />
+                  Crafted with passion and
+                  <Coffee className="w-4 h-4 text-yellow-400" />
+                  endless coffee
+                </span>
+                <span className="font-semibold tracking-wider">2025 Vishal Singh. All rights reserved.</span>
+              </div>
             </motion.div>
           </div>
-
           {/* Cyberpunk Border Effect */}
-          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-50" />
-          <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-50" />
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-50 pointer-events-none" />
+          <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-50 pointer-events-none" />
         </footer>
       </div>
     </div>
