@@ -1658,7 +1658,7 @@ export default function FuturisticPortfolioV2Page() {
             </div>
           </motion.div>
         ))}
-      </div>Core Technologies
+      </div>
     </section>
         {/* Projects Section */}
         <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 bg-black/60 backdrop-blur-sm">
