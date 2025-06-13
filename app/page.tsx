@@ -836,11 +836,11 @@ export default function FuturisticPortfolioV2Page() {
 
   const navItems = [
     { id: "home", label: "Home" },
-    { id: "my-journey", label: "My Journey" },
-    { id: "featured-projects", label: "Featured Projects" },
-    { id: "professional-experience", label: "Professional Experience" },
-    { id: "certifications", label: "Certifications & Accolades" },
-    { id: "contact", label: "Initiate Connection" },
+    { id: "my-journey", label: "About Me" },
+    { id: "featured-projects", label: "Projects" },
+    { id: "professional-experience", label: "Experience" },
+    { id: "certifications", label: "Certifications" },
+    { id: "contact", label: "Contact" },
   ]
 
   const scrollToSection = (sectionId: string) => {
