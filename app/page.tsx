@@ -1078,7 +1078,7 @@ export default function FuturisticPortfolioV2Page() {
               transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               className="w-2.5 h-2.5 bg-cyan-400 rounded-full mr-2.5 shadow-[0_0_8px_rgba(0,255,255,0.7)]"
             />
-            SYSTEM ONLINE // AVAILABLE FOR COLLABORATION
+            AVAILABLE FOR WORK
           </motion.div>
           <div className="space-y-4">
             <motion.h1
