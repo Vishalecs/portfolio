@@ -837,10 +837,10 @@ export default function FuturisticPortfolioV2Page() {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "my-journey", label: "My Journey" },
-    { id: "projects", label: "Projects" },
-    { id: "experience", label: "Experience" },
-    { id: "certifications", label: "Certifications" },
-    { id: "contact", label: "Contact" },
+    { id: "featured-projects", label: "Featured Projects" },
+    { id: "professional-experience", label: "Professional Experience" },
+    { id: "certifications", label: "Certifications & Accolades" },
+    { id: "contact", label: "Initiate Connection" },
   ]
 
   const scrollToSection = (sectionId: string) => {
@@ -1496,15 +1496,24 @@ export default function FuturisticPortfolioV2Page() {
       </style>
       <div style={{ maxWidth: '64rem', margin: '0 auto', position: 'relative', zIndex: 10, textAlign: 'center' }}>
         {/* Animated Heading: "My Journey" */}
-        <motion.h1
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: false }}
-          style={{ fontSize: '2.25rem', fontWeight: 700, color: '#f9fafb', marginBottom: '0.75rem' }}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="text-center mb-20"
         >
-          <DigitalTextReveal text="My Journey" stagger={0.08} className="inline-block" />
-        </motion.h1>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-50 mb-4 whitespace-nowrap">
+            <DigitalTextReveal text="My Journey" stagger={0.08} className="inline-block" />
+          </h2>
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: 120 }}
+            transition={{ delay: 0.5, duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            className="h-1.5 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto rounded-full shadow-[0_0_10px_rgba(0,255,255,0.3)]"
+          />
+        </motion.div>
 
         {/* Paragraph Animation */}
         <motion.div
@@ -1649,7 +1658,7 @@ export default function FuturisticPortfolioV2Page() {
             </div>
           </motion.div>
         ))}
-      </div>
+      </div>Core Technologies
     </section>
         {/* Projects Section */}
         <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 bg-black/60 backdrop-blur-sm">
